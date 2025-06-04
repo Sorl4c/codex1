@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ejemplo Tarjeta Vehículo Premium</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="tarjeta-vehiculo-premium.css"/>
+
+</head>
+
+<body>
+  
+  <div class="container mx-auto">
+    <!-- Ejemplo de una única tarjeta de vehículo -->
+    <div class="card vehicle-card position-relative">
+      <div class="row g-0">
+        <!-- Imagen del vehículo -->
+        <div class="col-lg-5">
+          <div class="vehicle-image">
+            <img id="mainImage"
+              src="https://hips.hearstapps.com/hmg-prod/images/m2-01-649bd50053370.png?crop=1.00xw:1.00xh;0,0"
+              loading="lazy"
+              alt="BMW M2, vista frontal"
+            />
+            <div class="image-overlay">
+              <!-- Icono SVG de estrella -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polygon points="12 2 15 8.5 22 9.3 17 14.2 18.2 21.1 12 17.8 5.8 21.1 7 14.2 2 9.3 9 8.5 12 2"></polygon>
+              </svg>
+              23.400 €
+            </div>
+          </div>
+          <div class="thumbnails">
+            <img class="thumb" src="https://hips.hearstapps.com/hmg-prod/images/m2-01-649bd50053370.png?crop=1.00xw:1.00xh;0,0" alt="Vista frontal">
+            
+            
+            <img class="thumb" src="https://a.ccdn.es/cnet/contents/media/bmw/serie_2/1210527.jpg/900x505cut/" alt="Vista trasera">
+            <img class="thumb" src="https://hips.hearstapps.com/hmg-prod/images/bmw-m2-cs-birch-green-individual-1605722794.jpg" alt="Vista especial">
+          </div>
+        </div>
+
+        <!-- Información del vehículo -->
+        <div class="col-lg-7">
+          <div class="vehicle-info">
+            <div class="vehicle-header">
+              <!-- Logo de la marca -->
+              <img
+                class="brand-logo"
+                src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg"
+                alt="Logo BMW"
+              />
+              <div class="header-content">
+                <h3 class="vehicle-title">BMW Serie 3 320i</h3>
+                <div class="vehicle-subtitle">
+                  Sedán ejecutivo de lujo con tecnología avanzada
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Ficha de especificaciones -->
+            <div class="specs-grid">
+              <!-- Año -->
+              <div class="spec-item">
+                <svg
+                  class="spec-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                <div class="spec-content">
+                  <div class="spec-label">Año</div>
+                  <div class="spec-value">2021</div>
+                </div>
+              </div>
+
+              <!-- Kilometraje -->
+              <div class="spec-item">
+                <svg
+                  class="spec-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M4 19l8-16 8 16H4z"></path>
+                </svg>
+                <div class="spec-content">
+                  <div class="spec-label">Kilometraje</div>
+                  <div class="spec-value">35,000 km</div>
+                </div>
+              </div>
+
+              <!-- Transmisión -->
+              <div class="spec-item">
+                <svg
+                  class="spec-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="3"></circle>
+                  <path
+                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.09A1.65 1.65 0 0 0 12 4.09V4a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.09a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0 -.33 1.82v.09A1.65 1.65 0 0 0 19.91 12H20a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"
+                  ></path>
+                </svg>
+                <div class="spec-content">
+                  <div class="spec-label">Transmisión</div>
+                  <div class="spec-value">Automática</div>
+                </div>
+              </div>
+
+              <!-- Combustible -->
+              <div class="spec-item">
+                <svg
+                  class="spec-icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 2.69l5.66 9.19a6 6 0 1 1-11.32 0z"></path>
+                </svg>
+                <div class="spec-content">
+                  <div class="spec-label">Combustible</div>
+                  <div class="spec-value">Gasolina</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Descripción -->
+            <div class="vehicle-description">
+              Vehículo en excelente estado con mantenimiento completo al día. Incluye sistema de navegación, asientos de cuero, climatizador automático y sistema de sonido premium. Ideal para ejecutivos que buscan confort y prestaciones superiores.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ./card.vehicle-card -->
+  </div>
+
+  <script>
+    const mainImage = document.getElementById('mainImage');
+    const thumbnails = document.querySelectorAll('.thumb');
+
+    thumbnails.forEach((thumb) => {
+      thumb.addEventListener('click', () => {
+        mainImage.src = thumb.src;
+
+        thumbnails.forEach((img) => img.classList.remove('selected'));
+        thumb.classList.add('selected');
+      });
+    });
+
+    // Establecer la primera miniatura como seleccionada por defecto
+    thumbnails[0].classList.add('selected');
+  </script>
+</body>
+</html>

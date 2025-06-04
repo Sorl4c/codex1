@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Administrar Vehículos</title>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="tarjeta-vehiculo-premium.css" />
+</head>
+<body>
+  <div class="container py-4">
+    <h1 class="mb-4">Administrar Vehículos</h1>
+    <form id="vehicleForm" class="mb-4" enctype="multipart/form-data">
+      <input type="hidden" id="vehicleId" name="id" />
+      <div class="row mb-3">
+        <div class="col">
+          <label class="form-label">Título</label>
+          <input class="form-control" id="title" name="title" required />
+        </div>
+        <div class="col">
+          <label class="form-label">Subtítulo</label>
+          <input class="form-control" id="subtitle" name="subtitle" required />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <label class="form-label">Precio</label>
+          <input class="form-control" id="price" name="price" required />
+        </div>
+        <div class="col">
+          <label class="form-label">Imagen principal</label>
+          <input type="file" class="form-control" id="mainImage" name="mainImage" required />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <label class="form-label">Thumbnail 1</label>
+          <input type="file" class="form-control" id="thumb1" name="thumb1" required />
+        </div>
+        <div class="col">
+          <label class="form-label">Thumbnail 2</label>
+          <input type="file" class="form-control" id="thumb2" name="thumb2" required />
+        </div>
+        <div class="col">
+          <label class="form-label">Thumbnail 3</label>
+          <input type="file" class="form-control" id="thumb3" name="thumb3" required />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <label class="form-label">Logo marca</label>
+          <input type="file" class="form-control" id="brandLogo" name="brandLogo" required />
+        </div>
+        <div class="col">
+          <label class="form-label">Año</label>
+          <input class="form-control" id="year" name="year" required />
+        </div>
+        <div class="col">
+          <label class="form-label">Kilometraje</label>
+          <input class="form-control" id="mileage" name="mileage" required />
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col">
+          <label class="form-label">Transmisión</label>
+          <input class="form-control" id="transmission" name="transmission" required />
+        </div>
+        <div class="col">
+          <label class="form-label">Combustible</label>
+          <input class="form-control" id="fuel" name="fuel" required />
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Descripción</label>
+        <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">Guardar</button>
+      <button class="btn btn-secondary" type="button" id="cancelBtn">Cancelar</button>
+    </form>
+    <table class="table" id="vehicleTable">
+      <thead>
+        <tr>
+          <th>Título</th>
+          <th>Precio</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>
