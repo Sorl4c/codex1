@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "BMW Serie 3 320i",
+    "subtitle": "Sedán ejecutivo de lujo con tecnología avanzada",
+    "price": "23.400 €",
+    "mainImage": "https://hips.hearstapps.com/hmg-prod/images/m2-01-649bd50053370.png?crop=1.00xw:1.00xh;0,0",
+    "thumbnails": [
+      "https://hips.hearstapps.com/hmg-prod/images/m2-01-649bd50053370.png?crop=1.00xw:1.00xh;0,0",
+      "https://a.ccdn.es/cnet/contents/media/bmw/serie_2/1210527.jpg/900x505cut/",
+      "https://hips.hearstapps.com/hmg-prod/images/bmw-m2-cs-birch-green-individual-1605722794.jpg"
+    ],
+    "brandLogo": "https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg",
+    "year": "2021",
+    "mileage": "35,000 km",
+    "transmission": "Automática",
+    "fuel": "Gasolina",
+    "description": "Vehículo en excelente estado con mantenimiento completo al día. Incluye sistema de navegación, asientos de cuero, climatizador automático y sistema de sonido premium. Ideal para ejecutivos que buscan confort y prestaciones superiores."
+  }
+]
